@@ -1,0 +1,226 @@
+---
+layout: default
+title: Projects
+nav_order: 3
+has_children: true
+#permalink: /docs/projects
+description: "Some of my projects can be found here."
+---
+
+# **CS7641 - Team 35**
+
+# **Benchmarking​ Movie Box Office Collection​ Using Predictive Modelling Techniques**
+
+# Midterm Report
+
+## Motivation/Introduction:
+
+Movies and TV shows have wide appeal, and it is important to identify the key factors that contribute to their profitability and success, which benefits both filmmakers and audiences [1]. Previous research has demonstrated that utilizing machine learning techniques to predict box office revenue is effective when incorporating features such as social media engagement, cast and crew, genre, and release date [1]. By doing so, the film industry can gain a better understanding of what factors contribute to a movie's success or failure, leading to improved profitability and higher success rates. 
+
+The aim of this project is to predict the box office performance of movies by analyzing a dataset obtained from Kaggle, which comprises over 3000 data points and more than 20 features including budget, directors, cast, and crew, among others, with the objective of determining the most influential variables. Additionally, we aim to extend this approach to develop a recommendation system that suggests movies based on an individual's mood in the future [2] [4]. 
+
+## Problem Definition: 
+
+This project aims to use predictive modeling techniques to benchmark the accuracy of box office revenue predictions for movies [2] [3]. By analyzing various features of movies, such as genre, budget, cast, release date, and popularity, we aim to develop and compare different predictive models. The objective is to identify the most reliable and effective models that can assist the film industry in making informed decisions about budget, popularity, cast etc.  
+
+* **Supervised Learning:**
+To develop a predictive model for movie box office revenue by training and testing various models on historical data with relevant input features and select the best model to predict box office revenue for new movies [1] [3]. 
+
+* **Unsupervised Learning:** 
+To explore patterns and relationships in the data and to use the results of the algorithms to identify groups of movies that share similar characteristics and understand how they relate to box office revenue [4].
+
+## Data Collection: 
+The objective of our project is to compare and evaluate different movie recommendation algorithms using a dataset available on [Kaggle](https://www.kaggle.com/competitions/tmdb-box-office-prediction). The training set of the database contains information about 3000 movies, including budget, cast, crew, release date, and popularity, among others. The test set on the other hand, contains information about 4398 movies, but does not include the box office revenue. Both files are in CSV format, which makes it easy to import and analyze the data.
+
+We first started out by populating the revenue column for the test dataset, as these value were omitted when this dataset was initially made available for the Kaggle competition. A dataset containing the revenue values along with two other columns named mov_names and mov_id was sourced using the TMDB API. We then merged the two datasets based on the shared movie names column. Only seven of the movies were not found in the third party dataset, and we duly dropped these rows from the test dataset and then concatenated the training and test datasets to form a single dataset.
+
+We then sourced IMDB ratings, and the number of votes / popularity scores for each movie from the IMDB website. We then merged these two columns with the dataset to increase the number of features available for analysis. 
+
+Subsequently, we used the nltk library to download the vader lexicon, which is a sentiment analysis tool that can be used to analyze the sentiment of a given text. We then used the SentimentIntensityAnalyzer function from nltk.sentiment.vader to calculate the sentiment scores for each movie title, overview and tagline. The sentiment scores that ranged between -1 and 1 were then added to the test dataset as new columns which brought the total number of columns to 29 before data cleaning took place.
+
+## Data Cleaning:
+We filtered out movies where the budget variable had a value below 1, as we were of the opinion that those entries did not contain any reliable information and thereforere could have lead to misleading results. Then we checked to see the number of missing values in each column. The results are shown below, where the number of missing values is shown in descending order.
+
+```
+belongs_to_collection    3994
+homepage                 3331
+tagline                   634
+Keywords                  280
+production_companies      162
+production_countries       57
+crew                       29
+cast                       25
+spoken_languages           21
+popularity2                12
+rating                     12
+totalVotes                 12
+genres                     11
+overview                    9
+runtime                     1
+```
+The rest of the columns are omitted here as they do not contain any missing values. 
+
+| ![Missing Value Counts](../..//assets/img/midterm_nafeatures.png "Missing Value Counts") |
+| :--: |
+| ***Figure 1:** Counts for missing values across features* |
+
+Here, we can see that the variable belongs_to_collection has the highest number of missing values, followed by homepage, tagline, and Keywords. As columns such as belongs_to_collection, genres, production_companies, Keywords,cast and crew came in a nested dictionary format, we had to unpack them to extract the relevant information into lists with only the top few entries embedded within the dataframe and extracted the year values from the release_date column. The code for this is shown below.
+
+```python
+def unpack_nested(df):
+    df["collection_name"] = df["belongs_to_collection"].apply(lambda x: [i["name"] for i in eval(x)] if isinstance(x, float) == False else x)
+    df["genre_list"] = df["genres"].apply(lambda x: [i["name"] for i in eval(x)] if isinstance(x, float) == False else x) # name or id
+    df["genre_list"] = df["genre_list"].apply(lambda x: x[0:5] if (isinstance(x, float) == False and len(x) > 3) else x)
+    df["production_companies_list"] = df["production_companies"].apply(lambda x: [i["name"] for i in eval(x)] if isinstance(x, float) == False else x)
+    df["production_companies_list"] = df["production_companies_list"].apply(lambda x: x[0:5] if (isinstance(x, float) == False and len(x) > 3) else x)
+    df["keyword_list"] = df["Keywords"].apply(lambda x: [i["name"] for i in eval(x)] if isinstance(x, float) == False else x)
+    df["keyword_list"] = df["keyword_list"].apply(lambda x: x[0:5] if (isinstance(x, float) == False and len(x) > 3) else x)
+    df["cast_list"] = df["cast"].apply(lambda x: [i["name"] for i in eval(x)] if isinstance(x, float) == False else x)
+    df["cast_list"] = df["cast_list"].apply(lambda x: x[0:5] if (isinstance(x, float) == False and len(x) >3) else x)
+    df["crew_list"] = df["crew"].apply(lambda x: [i["name"] for i in eval(x)] if isinstance(x, float) == False else x)
+    df["crew_list"] = df["crew_list"].apply(lambda x: x[0:1] if (isinstance(x, float) == False and len(x) > 1) else x)
+    df["release_year"] = df["release_date"].apply(lambda x: x.year)
+```
+Next, we performed imputation on the missing values depending on the type of variable. For categorical variables, we imputed the missing values with the string N/A, and for numerical variables, we imputed the missing values with the median values of the column. The columns id, imdb_id and poster_path were dropped as they did not contain any useful information for our analysis, and only served as unique identifiers.
+
+The release date column was also problematic as contained errors due to some entries having the two digit year format. This caused the year values to be misinterpreted such as the date 01/03/54 being recognized as 01/03/2054, instead of the correct value of 01/03/1954. We therefore had to correct the year values for the movies that contained misinterpreted two digit release year values exceeding 2019, which was the year the dataset was compiled.
+
+| ![Release Year vs. Revenue](../..//assets/img/midterm_relyear.png "Release Year vs. Revenue") |
+| :--: |
+| ***Figure 2:** Release Year vs. Revenue* |
+
+Here, we can see that most movies contained in the dataset were released after the year 2000 and the revenue value shows a somewhat exponential increase. This is expected as the movie industry has been growing over the years and the number of movies being released has also increased. However, inflation and the time value of money are also factor we may need to consider when analyzing the revenue values and model building. Following the midterm report, we will also try and analyze the revenue values in terms of inflation adjusted values and see if that has any effect on the model performance.
+
+| ![Popularity vs. Revenue](../..//assets/img/midterm_popvsrev.png "Popularity vs. Revenue") |
+| :--: |
+| ***Figure 3:** Popularity vs. Revenue* |
+
+Here, we can see the relationship between popularity and revenue. We can see that the majority of movies in the dataset had a popularity value of less than 50.
+
+| ![Title Sentiment vs. Revenue](../..//assets/img/midterm_titvsrev.png "Title Sentiment vs. Revenue") |
+| :--: |
+| ***Figure 4:** Title Sentiment vs. Revenue* |
+
+While titles are pretty short text snippets, they can still be used to extract sentiment information. We can see that the revenue values are mostly concentrated around the 0.0 sentiment value, which indicates neutrality. We can see a slight convex shape here, which could mean that titles with more extreme positive and negative sentiment values could have higher revenue values.
+
+| ![Frequencies Genre](../..//assets/img/midterm_genrefreq.png "Frequencies Genre") |
+| :--: |
+| ***Figure 5:** Frequencies for the categorical variable genre* |
+
+Drama, comedy and action are the most frequently occuring genre values for movies listed in our database.
+
+| ![Frequencies Languages](../..//assets/img/midterm_top5lang.png "Frequencies Languages") |
+| :--: |
+| ***Figure 6:** Top 5 frequencies for the language variable* |
+
+Here, we can see that most movies are in English, followed by Hindi, French, Russian, Japanese.
+
+For the categorical variables that were imbalanced (such as the original_language column that mostly contained the entry "en"), we performed one hot encoding.
+
+We dropped the variable production_country and only kept the five most frequent original language values after one hot encoding. We performed further data cleaning for the variables popularity2, rating, totalVotes which contained zero values that were impacting the reliability of our dataset. We checked for movies that were tagged as unreleased but had populated ratings and revenue columns.
+
+We manually one hot encoded the genre column, which we had obtained by unpacking the nested dictionaries. For categorical variables which followed a somewhat uniform distribution, we used multiple correspondence analysis (MCA) to identify patterns and relationships among various categorical entries and to summarize and present the data in a way which could be easily interpreted and understood. MCA helped us in getting numerical representations out of these categorical variables. MCA was applied to variables such as cast, crew and genre. Following the steps mentioned above, we moved on to model building.
+
+| ![Correlation Matrix](../..//assets/img/midterm_corrmatrix.png "Correlation Matrix") |
+| :--: |
+| ***Figure 7:** Correlation Matrix for all variables* |
+
+| ![Pairplot](../..//assets/img/midterm_pairplot.png "Pairplot") |
+| :--: |
+| ***Figure 8:** Pairplot for all variables* |
+
+[Higher resolution image available via Sharepoint](https://gtvault.sharepoint.com/:i:/s/CS7641Project412/EVeicz2K0uJBvqAemis-wbsBaBW5BN-nqiYeFlVrM1i3hQ?e=u45Gld)
+
+## Methods and Model Building: 
+
+### Model Rationale
+
+For our modeling exercise for supervised learning, we are using XGBoost as our baseline model. We will be exploring our other option in neural network later during the project.
+The following have been our considerations in the XGBoost model. 
+1.	XGBoost is a powerful machine learning algorithm that can handle missing values as part of its internal algorithm. In our dataset, there are columns with a significant number of “N/A” or missing that cannot be imputed using traditional methods. However, XGBoost can handle such cases internally due to its inherent tree-based model.
+The algorithm can split data at each node based on the available features, allowing it to learn patterns and make predictions even when data is missing or cannot be predicted. This feature of XGBoost makes it particularly useful for datasets with many missing values or where the missingness is not random.
+2.	XGBoost, a popular machine learning algorithm, has recently introduced native support for categorical variables. This means that XGBoost can now handle categorical values directly without requiring separate one-hot encoding in the model. This makes XGBoost a powerful tool for datasets with categorical variables are common.
+By handling categorical variables natively, XGBoost can reduce the memory and computation requirements of the model. This allows for faster training and better performance on large datasets with many categorical variables.
+
+### Model Setup
+
+The following are the steps that have been employed in our modeling exercise. The original dataset was subset in 19 variables which will be passed through to the XGBoost Model. From the model we have converted “status” variable to be categorical, with a few binary variables left in the model including presence of homepage, or if the movie belongs to a franchise. We performed a train-test split of 80-20 for our current model run. 
+For our current exercise, we have tuned the model using Grid Search. The other consideration for hyperparameter tuning was Bayesian Optimization. However, due the computational restrictions in the workspace Grid Search was selected. 
+The following code was utilized for the run:
+
+```python
+param_grid = {
+    'max_depth': [3,5,7,9],
+    'learning_rate': [0.3,0.1,0.01,0.001],
+    'n_estimators': [50,100,500, 1000]
+}
+model = xgb.XGBRegressor(tree_method="gpu_hist", enable_categorical=True)
+grid_search = GridSearchCV(model, param_grid, cv=5, scoring='r2')
+grid_search.fit(Xtrain, Ytrain)
+```
+
+Following GridSearch the best hyper parameter for the model were selected, this included the best parameters. 
+
+## Results and Discussion:
+
+### Model Performance
+
+The model was tested on the dataset and performed reasonably well with the following metrics:  
+* The MSE of the model was found to be: 5877313325575103.0  
+
+While this might look like a significantly high value the revenue variable is expressed in billions which provides the reason for the abnormally high number.  
+* The r-squared value of the Model was found to be: 0.7576 which is reasonable. It is expected that the r-squred value can be improved through hyper parameter tuning.
+
+### Visualization
+
+Following this exercise, a few key visualizations were performed to evaluate the model performance.  
+The visualization for the actual vs Predicted value for the model is displayed below:  
+
+|![Actual vs Predicted](../..//assets/img/midterm_model_actvspred.png "Actual vs Predicted") |
+| :--: |
+| ***Figure 9:** Actual vs. Predicted* |
+
+The visualization for the Residual Values value for the model is displayed below:
+
+| ![Residual Values](../..//assets/img/midterm_model_residplot.png "Residual Values") |
+| :--: |
+| ***Figure 10:** Residual Values* |
+
+
+The visualization for the important features for the model is displayed below:
+
+| ![Feature Importance](../..//assets/img/midterm_model_featimp.png "Feature Importance") |
+| :--: |
+| ***Figure 11:** Feature Importance* |
+
+From the feature importance visualization, we can observe that the “totalVotes”, “budget” and whether the movie belongs to a franchise are important features in predicting the revenue which makes intuitive sense. 
+
+By leveraging different features of movies, such as genre, budget, cast, release date, and popularity, we intend to develop and compare different models that can help in identifying the most reliable and effective predictive model(s) for box office revenue forecasting [2]. Evaluating the models like Neural Net, XGBoost and K-means, using accuracy, precision, recall, and F1-score metrics, and conducting a sensitivity analysis we will be able to explore how different factors and features affect model performance that can help filmmakers make informed decisions about where to invest their resources [4].
+
+We now have a cleaned dataset which can be utilized to build various types of machine learning models. These models will vary in complexity and we will be comparing the performance of these models to identify the most effective model for predicting movie revenue and track how model complexity and performance are related.
+
+<!--
+<p>
+<img src="../../assets/img/proposal_img2.jpg" alt="html image insert" style="height: 100px; width:1200px;"/>
+</p>
+-->
+
+## Contribution Table:
+
+| ![Contribution Table](../..//assets/img/midterm_contchart.png "Contribution Table") |
+| :--: |
+| ***Figure 12:** Contribution Table* |
+
+## References:
+
+1. N. Darapaneni et al., "Movie Success Prediction Using ML," 2020 11th IEEE Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON), New York, NY, USA, 2020, pp. 0869-0874, doi: 10.1109/UEMCON51285.2020.9298145. 
+
+2. Quader, Nahid & Gani, Md & Chaki, Dipankar & Ali, Md. (2018). A Machine Learning Approach to Predict Movie Box-Office Success. 10.1109/ICCITECHN.2017.8281839.  
+
+3. A. Chauhan, D. Nagar and P. Chaudhary, "Movie Recommender system using Sentiment Analysis," 2021 International Conference on Innovative Practices in Technology and Management (ICIPTM), Noida, India, 2021, pp. 190-193, doi: 10.1109/ICIPTM52218.2021.9388340. 
+
+4. R. Ahuja, A. Solanki and A. Nayyar, "Movie Recommender System Using K-Means Clustering AND K-Nearest Neighbor," 2019 9th International Conference on Cloud Computing, Data Science & Engineering (Confluence), Noida, India, 2019, pp. 263-268, doi: 10.1109/CONFLUENCE.2019.8776969. 
+
+## Gantt Chart and Project Timeline Link:
+
+[Excel via Microsoft 365](https://gtvault.sharepoint.com/:x:/s/CS7641Project412/EZOF-ZTCmk5Dii-uhV0h0HMBLBg49NEL4Q8g7nXo6N1gTA?e=Mjzz0K)
