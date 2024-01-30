@@ -5,7 +5,8 @@ title: Resume
 parent: About Me
 nav_order: 1
 ---
-# *Resume*
+
+# Resume
 
 <object data="../..//assets/about_me/resume.pdf" type="application/pdf" width="900px" height="1038px">
     <embed src="../..//assets/about_me/resume.pdf">

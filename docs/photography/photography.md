@@ -6,4 +6,4 @@ has_children: true
 description: "Photos I have taken over the years."
 ---
 
-# **Photography**
+# Photography

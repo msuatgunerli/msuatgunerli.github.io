@@ -12,10 +12,12 @@ description: "Homepage"
 
 # Home
 
-## 1. [About Me](https://msuatgunerli.github.io/docs/about_me/about_me.html)
+## 1. [Home](https://msuatgunerli.github.io)
 
-## 2. [Projects](https://msuatgunerli.github.io/docs/projects/projects.html)
+## 2. [About Me](https://msuatgunerli.github.io/docs/about_me/about_me.html)
 
-## 2. [Blog](https://msuatgunerli.github.io/docs/blog/blog.html)
+## 3. [Projects](https://msuatgunerli.github.io/docs/projects/projects.html)
 
-## 2. [Photography](https://msuatgunerli.github.io/docs/photography/photography.html)
+## 4. [Blog](https://msuatgunerli.github.io/docs/blog/blog.html)
+
+## 5. [Photography](https://msuatgunerli.github.io/docs/photography/photography.html)
