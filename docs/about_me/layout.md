@@ -3,6 +3,7 @@ layout: default
 title: Layout
 #permalink: /docs/about_me/layout
 parent: About Me
+nav_order: 2
 ---
 
 # Layout Utilities

@@ -3,6 +3,7 @@ layout: default
 title: Resume
 #permalink: /docs/about_me/resume
 parent: About Me
+nav_order: 1
 ---
 # *Resume*
 
