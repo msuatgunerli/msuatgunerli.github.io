@@ -1,7 +1,7 @@
 ---
 layout: default
 title: RAPTOR
-#permalink: /docs/about_me/layout
+#permalink: /docs/projects/raptor
 parent: Projects
 nav_order: 2
 ---

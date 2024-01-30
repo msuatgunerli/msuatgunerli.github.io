@@ -6,4 +6,3 @@ has_children: true
 #permalink: /docs/about_me
 description: "About Me"
 ---
-
