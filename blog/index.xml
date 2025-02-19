@@ -20,37 +20,33 @@
 
 
 
-<section id="my-second-post-of-2025" class="level1">
-<h1>My Second Post of 2025</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="my-second-post-of-2025" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> My Second Post of 2025</h1>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
 <p>Welcome to my first post of 2025! In this article, we’ll explore…</p>
 </section>
-<section id="main-content" class="level2">
-<h2 class="anchored" data-anchor-id="main-content">Main Content</h2>
+<section id="main-content" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="main-content"><span class="header-section-number">1.2</span> Main Content</h2>
 <p>Here’s where your main content goes. You can:</p>
 <ul>
 <li>Use bullet points</li>
 <li>Add code blocks</li>
 <li>Include images</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid figure-img"></p>
-<figcaption>Test Image</figcaption>
-</figure>
-</div>
 
 
 </section>
 </section>
 
  ]]></description>
+  <category>2025</category>
+  <category>default</category>
   <category>news</category>
   <category>analysis</category>
   <guid>https://msuatgunerli.github.io/blog/2025/posts/002.html</guid>
   <pubDate>Wed, 19 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/002/*.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>2025-001: My First Post of 2025</title>
@@ -77,9 +73,50 @@
 </ul>
 <section id="test-toc-depth" class="level3" data-number="1.2.1">
 <h3 data-number="1.2.1" class="anchored" data-anchor-id="test-toc-depth"><span class="header-section-number">1.2.1</span> Test toc depth</h3>
+<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid" alt="Test Image 1"> <img src="https://msuatgunerli.github.io/blog/2025/assets/001/img1.jpg" class="img-fluid" alt="Test Image 2"></p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>2025</category>
+  <category>default</category>
+  <category>news</category>
+  <category>testing</category>
+  <guid>https://msuatgunerli.github.io/blog/2025/posts/001.html</guid>
+  <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/*.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>2024-001: My First Post of 2024</title>
+  <dc:creator>msuatgunerli </dc:creator>
+  <link>https://msuatgunerli.github.io/blog/2024/posts/001.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="my-first-post-of-2024" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> My First Post of 2024</h1>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>Welcome to my first post of 2024! In this article, we’ll explore…</p>
+</section>
+<section id="main-content" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="main-content"><span class="header-section-number">1.2</span> Main Content</h2>
+<p>Here’s where your main content goes. You can:</p>
+<ul>
+<li>Use bullet points</li>
+<li>Add code blocks</li>
+<li>Include images</li>
+</ul>
+<section id="test-toc-depth" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="test-toc-depth"><span class="header-section-number">1.2.1</span> Test toc depth</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://msuatgunerli.github.io/blog/2024/assets/001/img0.jpg" class="img-fluid figure-img"></p>
 <figcaption>Test Image</figcaption>
 </figure>
 </div>
@@ -90,11 +127,13 @@
 </section>
 
  ]]></description>
+  <category>2024</category>
+  <category>default</category>
   <category>news</category>
   <category>testing</category>
-  <guid>https://msuatgunerli.github.io/blog/2025/posts/001.html</guid>
-  <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://msuatgunerli.github.io/blog/2024/posts/001.html</guid>
+  <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://msuatgunerli.github.io/blog/2024/assets/001/img0.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
