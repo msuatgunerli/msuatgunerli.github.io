@@ -40,7 +40,7 @@
 </section>
 
  ]]></description>
-  <category>default</category>
+  <category>_default</category>
   <category>2025</category>
   <category>news</category>
   <category>analysis</category>
@@ -86,7 +86,7 @@
 </section>
 
  ]]></description>
-  <category>default</category>
+  <category>_default</category>
   <category>2025</category>
   <category>news</category>
   <category>testing</category>
@@ -132,7 +132,7 @@
 </section>
 
  ]]></description>
-  <category>default</category>
+  <category>_default</category>
   <category>2024</category>
   <category>news</category>
   <category>testing</category>
