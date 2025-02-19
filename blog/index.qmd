@@ -1,7 +1,26 @@
 ---
 title: "Blog"
+listing:
+  - id: "2025-posts"
+    contents: "2025/posts"
+    type: default
+    fields: [date, title, description, categories]
+    sort: "date desc"
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    feed: true
+    date-format: "MMMM D, YYYY"
+    image-height: 200px
+    page-size: 10
 ---
 
 # Blog Posts
-- [2025-001](2025/posts/001.qmd)
-- [2025-002](2025/posts/002.qmd)
+
+<details>
+<summary>2025</summary>
+
+:::{#2025-posts}
+:::
+
+</details>

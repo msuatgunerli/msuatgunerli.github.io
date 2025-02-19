@@ -11,7 +11,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Blog Posts\n\n2025-001\n2025-002"
+    "text": "Blog Posts\n\n\n2025\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n2025-002: My Second Post of 2025\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\n\nBrief description of your post\n\n\n\n\n\nFebruary 19, 2025\n\n\n\n\n\n\n\n2025-001: My First Post of 2025\n\n\n\n\n\n\nnews\n\n\ntesting\n\n\n\nBrief description of your post\n\n\n\n\n\nFebruary 18, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -44,23 +44,23 @@
   {
     "objectID": "blog/2025/posts/001.html",
     "href": "blog/2025/posts/001.html",
-    "title": "My First Post of 2025",
+    "title": "2025-001: My First Post of 2025",
     "section": "",
-    "text": "Welcome to my first post of 2025! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\nTest Image"
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image"
   },
   {
     "objectID": "blog/2025/posts/001.html#introduction",
     "href": "blog/2025/posts/001.html#introduction",
-    "title": "My First Post of 2025",
+    "title": "2025-001: My First Post of 2025",
     "section": "",
     "text": "Welcome to my first post of 2025! In this article, we’ll explore…"
   },
   {
     "objectID": "blog/2025/posts/001.html#main-content",
     "href": "blog/2025/posts/001.html#main-content",
-    "title": "My First Post of 2025",
+    "title": "2025-001: My First Post of 2025",
     "section": "",
-    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\nTest Image"
+    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image"
   },
   {
     "objectID": "about.html",
@@ -68,5 +68,26 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "blog/2025/posts/002.html",
+    "href": "blog/2025/posts/002.html",
+    "title": "My Second Post of 2025",
+    "section": "",
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\nTest Image"
+  },
+  {
+    "objectID": "blog/2025/posts/002.html#introduction",
+    "href": "blog/2025/posts/002.html#introduction",
+    "title": "My Second Post of 2025",
+    "section": "",
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…"
+  },
+  {
+    "objectID": "blog/2025/posts/002.html#main-content",
+    "href": "blog/2025/posts/002.html#main-content",
+    "title": "My Second Post of 2025",
+    "section": "",
+    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\nTest Image"
   }
 ]

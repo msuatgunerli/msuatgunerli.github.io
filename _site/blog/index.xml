@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>msuatgunerli.github.io</title>
+<link>https://msuatgunerli.github.io/blog/</link>
+<atom:link href="https://msuatgunerli.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.6.40</generator>
+<lastBuildDate>Wed, 19 Feb 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>My Second Post of 2025</title>
+  <dc:creator>msuatgunerli </dc:creator>
+  <link>https://msuatgunerli.github.io/blog/2025/posts/002.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="my-second-post-of-2025" class="level1">
+<h1>My Second Post of 2025</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Welcome to my first post of 2025! In this article, we’ll explore…</p>
+</section>
+<section id="main-content" class="level2">
+<h2 class="anchored" data-anchor-id="main-content">Main Content</h2>
+<p>Here’s where your main content goes. You can:</p>
+<ul>
+<li>Use bullet points</li>
+<li>Add code blocks</li>
+<li>Include images</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid figure-img"></p>
+<figcaption>Test Image</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>analysis</category>
+  <guid>https://msuatgunerli.github.io/blog/2025/posts/002.html</guid>
+  <pubDate>Wed, 19 Feb 2025 05:00:00 GMT</pubDate>
+  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>2025-001: My First Post of 2025</title>
+  <dc:creator>msuatgunerli </dc:creator>
+  <link>https://msuatgunerli.github.io/blog/2025/posts/001.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="my-first-post-of-2025" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> My First Post of 2025</h1>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>Welcome to my first post of 2025! In this article, we’ll explore…</p>
+</section>
+<section id="main-content" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="main-content"><span class="header-section-number">1.2</span> Main Content</h2>
+<p>Here’s where your main content goes. You can:</p>
+<ul>
+<li>Use bullet points</li>
+<li>Add code blocks</li>
+<li>Include images</li>
+</ul>
+<section id="test-toc-depth" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="test-toc-depth"><span class="header-section-number">1.2.1</span> Test toc depth</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid figure-img"></p>
+<figcaption>Test Image</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>testing</category>
+  <guid>https://msuatgunerli.github.io/blog/2025/posts/001.html</guid>
+  <pubDate>Tue, 18 Feb 2025 05:00:00 GMT</pubDate>
+  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

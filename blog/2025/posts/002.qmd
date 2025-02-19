@@ -1,22 +1,13 @@
 ---
-title: "2025-001: My First Post of 2025"
+title: "2025-002: My Second Post of 2025"
 description: "Brief description of your post"
-lang: "en"
-number-sections: true
 author: "msuatgunerli"
-date: "2025-02-18"
-# date-modified: "2025-02-19"
-categories: [news, testing]
+date: "2025-02-19"
+categories: [news, analysis]
 image: "../assets/001/img0.jpg"
-code-copy: true
-toc-depth: 5
-toc: true
-format:
-  html:
-    code-fold: true  # Collapsible code blocks
 ---
 
-# My First Post of 2025
+# My Second Post of 2025
 
 ## Introduction
 
@@ -29,7 +20,5 @@ Here's where your main content goes. You can:
 - Use bullet points
 - Add code blocks
 - Include images
-
-### Test toc depth
 
 ![Test Image](../assets/001/img0.jpg)

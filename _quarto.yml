@@ -7,6 +7,7 @@ execute:
 
 website:
   title: "msuatgunerli.github.io"
+  site-url: "https://msuatgunerli.github.io"
   navbar:
     left:
       - href: index.qmd
