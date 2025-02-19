@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Test Execution",
+    "section": "",
+    "text": "print(“Testing execution”)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -11,6 +18,48 @@
     "href": "index.html",
     "title": "msuatgunerli.github.io",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\ngit add . git commit -m “Initial Quarto website commit” base ❯ git branch -M main git push -u origin main\nEdit your _quarto.yml\nproject: type: website output-dir: _site # Ensure the output directory is set correctly\nexecute: freeze: auto\nmkdir -p .github/workflows touch .github/workflows/publish.yml\nname: Deploy Quarto Website to GitHub Pages\non: push: branches: main # Deploy when changes are pushed to the main branch workflow_dispatch: # Allows manual trigger from GitHub Actions\njobs: build-deploy: runs-on: ubuntu-latest permissions: contents: write steps: - name: Check out repository uses: actions/checkout@v4\n  - name: Set up Quarto\n    uses: quarto-dev/quarto-actions/setup@v2\n\n  - name: Render the Quarto website\n    run: quarto render\n\n  - name: Deploy to GitHub Pages\n    uses: quarto-dev/quarto-actions/publish@v2\n    with:\n      target: gh-pages\n    env:\n      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "how_to_deploy.html",
+    "href": "how_to_deploy.html",
+    "title": "msuatgunerli.github.io",
+    "section": "",
+    "text": "git add . git commit -m “Initial Quarto website commit” git branch -M main git push -u origin main"
+  },
+  {
+    "objectID": "how_to_deploy.html#create-remote-repo-clone-it-locally-and",
+    "href": "how_to_deploy.html#create-remote-repo-clone-it-locally-and",
+    "title": "msuatgunerli.github.io",
+    "section": "",
+    "text": "git add . git commit -m “Initial Quarto website commit” git branch -M main git push -u origin main"
+  },
+  {
+    "objectID": "how_to_deploy.html#edit-your-_quarto.yml",
+    "href": "how_to_deploy.html#edit-your-_quarto.yml",
+    "title": "msuatgunerli.github.io",
+    "section": "Edit your _quarto.yml",
+    "text": "Edit your _quarto.yml\nproject: type: website output-dir: _site # Ensure the output directory is set correctly\nexecute: freeze: auto"
+  },
+  {
+    "objectID": "how_to_deploy.html#create-workflows-folder-and-publish.yml",
+    "href": "how_to_deploy.html#create-workflows-folder-and-publish.yml",
+    "title": "msuatgunerli.github.io",
+    "section": "Create workflows folder and publish.yml",
+    "text": "Create workflows folder and publish.yml\nmkdir -p .github/workflows touch .github/workflows/publish.yml\nname: Quarto Publish with Jupyter Execution\non: push: branches: main # Deploy when code is pushed schedule: - cron: “0 6 * * *” # Runs daily at 6 AM UTC workflow_dispatch: # Allows manual trigger from GitHub Actions\njobs: build-deploy: runs-on: ubuntu-latest permissions: contents: write steps: - name: Check out repository uses: actions/checkout@v4\n  - name: Set up Quarto\n    uses: quarto-dev/quarto-actions/setup@v2\n\n  - name: Install Python and Dependencies\n    uses: actions/setup-python@v5\n    with:\n      python-version: '3.10'\n      cache: 'pip'\n\n  - name: Cache Python dependencies\n    uses: actions/cache@v3\n    with:\n      path: ~/.cache/pip\n      key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}\n      restore-keys: |\n        ${{ runner.os }}-pip-\n\n  - name: Install Required Packages\n    run: |\n      pip install --upgrade pip\n      pip install jupyter quarto\n      pip install -r requirements.txt  # Ensure this file lists dependencies\n\n  - name: Execute Jupyter Notebooks\n    run: |\n      jupyter nbconvert --execute --to notebook notebooks/win_probabilities.ipynb\n\n  - name: Render and Publish\n    uses: quarto-dev/quarto-actions/publish@v2\n    with:\n      target: gh-pages\n    env:\n      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+  },
+  {
+    "objectID": "how_to_deploy.html#add-requirements.txt",
+    "href": "how_to_deploy.html#add-requirements.txt",
+    "title": "msuatgunerli.github.io",
+    "section": "Add requirements.txt",
+    "text": "Add requirements.txt\nCreate and fill in requirements.txt git add requirements.txt git commit -m “Add dependencies for Jupyter execution” git push origin main\ngit add .github/workflows/publish.yml git commit -m “Update GitHub Actions to execute Jupyter notebooks” git push origin main"
+  },
+  {
+    "objectID": "how_to_deploy.html#all-future-deployments",
+    "href": "how_to_deploy.html#all-future-deployments",
+    "title": "msuatgunerli.github.io",
+    "section": "All future deployments",
+    "text": "All future deployments\nSince we are using GitHub Actions to handle rendering and publishing: quarto render –not needed quarto publish gh-pages not needed\ngit add . git commit -m “Updated content and notebooks” git push origin main"
   }
 ]

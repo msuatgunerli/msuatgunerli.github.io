@@ -1,0 +1,9 @@
+---
+title: "Test Execution"
+format: html
+execute:
+  freeze: auto
+---
+
+```{python}
+print("Testing execution")
