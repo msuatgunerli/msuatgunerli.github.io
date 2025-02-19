@@ -96,6 +96,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-2024-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-2024-posts'] = new List('listing-2024-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -187,7 +215,7 @@ window.Quarto = {
   <li><a href="#blog-posts" id="toc-blog-posts" class="nav-link active" data-scroll-target="#blog-posts">Blog Posts</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="MjAyNA==">2024 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="MjAyNQ==">2025 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVmYXVsdA==">default <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -240,7 +268,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2FuYWx5c2lz" data-listing-date-sort="1739941200000" data-listing-file-modified-sort="1739935332702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="quarto-post image-right" data-index="0" data-categories="MjAyNSUyQ2RlZmF1bHQlMkNuZXdzJTJDYW5hbHlzaXM=" data-listing-date-sort="1739941200000" data-listing-file-modified-sort="1739947414327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="body">
 <h3 class="no-anchor listing-title" data-anchor-id="blog-posts">
 <a href="../blog/2025/posts/002.html" class="no-external">2025-002: My Second Post of 2025</a>
@@ -249,6 +277,12 @@ window.Quarto = {
 <a href="../blog/2025/posts/002.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNQ=='); return false;">
+2025
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZGVmYXVsdA=='); return false;">
+default
+</div>
 <div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
 news
 </div>
@@ -268,7 +302,7 @@ February 19, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ3Rlc3Rpbmc=" data-listing-date-sort="1739854800000" data-listing-file-modified-sort="1739935832856" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="quarto-post image-right" data-index="1" data-categories="MjAyNSUyQ2RlZmF1bHQlMkNuZXdzJTJDdGVzdGluZw==" data-listing-date-sort="1739854800000" data-listing-file-modified-sort="1739947349041" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../blog/2025/posts/001.html" class="no-external">2025-001: My First Post of 2025</a>
@@ -277,6 +311,12 @@ February 19, 2025
 <a href="../blog/2025/posts/001.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNQ=='); return false;">
+2025
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZGVmYXVsdA=='); return false;">
+default
+</div>
 <div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
 news
 </div>
@@ -292,6 +332,74 @@ testing
 <a href="../blog/2025/posts/001.html" class="no-external">
 <div class="listing-date">
 February 18, 2025
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</details>
+<details>
+<summary>
+2024
+</summary>
+<div id="listing-2024-posts" class="quarto-listing quarto-listing-container-default">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-2024-posts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-2024-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="MjAyNCUyQ2RlZmF1bHQlMkNuZXdzJTJDdGVzdGluZw==" data-listing-date-sort="1708232400000" data-listing-file-modified-sort="1739947052292" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/2024/posts/001.html" class="no-external">2024-001: My First Post of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blog/2024/posts/001.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNA=='); return false;">
+2024
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZGVmYXVsdA=='); return false;">
+default
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
+news
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">
+testing
+</div>
+</div>
+<div class="listing-description">
+<a href="../blog/2024/posts/001.html" class="no-external">Brief description of your post</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../blog/2024/posts/001.html" class="no-external">
+<div class="listing-date">
+February 18, 2024
 </div>
 </a>
 </div>

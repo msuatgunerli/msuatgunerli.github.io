@@ -1,0 +1,13 @@
+title: "None"
+description: "None"
+lang: "en"
+number-sections: true
+author: "msuatgunerli"
+date: "2024-01-01"
+categories: [2024, default]
+toc: true
+toc-depth: 5
+code-copy: true
+format:
+  html:
+    code-fold: true

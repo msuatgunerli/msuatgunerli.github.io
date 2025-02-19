@@ -1,8 +1,9 @@
 ---
 title: "Blog"
 listing:
+  # Listing for 2025
   - id: "2025-posts"
-    contents: "2025/posts"
+    contents: "2025/posts/*.qmd"
     type: default
     fields: [date, title, description, categories]
     sort: "date desc"
@@ -10,6 +11,20 @@ listing:
     sort-ui: true
     filter-ui: true
     feed: true
+    date-format: "MMMM D, YYYY"
+    image-height: 200px
+    page-size: 10
+
+  # Listing for 2024
+  - id: "2024-posts"
+    contents: "2024/posts/*.qmd"
+    type: default
+    fields: [date, title, description, categories]
+    sort: "date desc"
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    # feed: false  # optional: disable feed if you only want a 2025 feed
     date-format: "MMMM D, YYYY"
     image-height: 200px
     page-size: 10
@@ -21,6 +36,14 @@ listing:
 <summary>2025</summary>
 
 :::{#2025-posts}
+:::
+
+</details>
+
+<details>
+<summary>2024</summary>
+
+:::{#2024-posts}
 :::
 
 </details>
