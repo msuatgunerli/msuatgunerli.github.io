@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "msuatgunerli.github.io",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\ngit add . git commit -m “Initial Quarto website commit” base ❯ git branch -M main git push -u origin main\nEdit your _quarto.yml\nproject: type: website output-dir: _site # Ensure the output directory is set correctly\nexecute: freeze: auto\nmkdir -p .github/workflows touch .github/workflows/publish.yml\nname: Deploy Quarto Website to GitHub Pages\non: push: branches: main # Deploy when changes are pushed to the main branch workflow_dispatch: # Allows manual trigger from GitHub Actions\njobs: build-deploy: runs-on: ubuntu-latest permissions: contents: write steps: - name: Check out repository uses: actions/checkout@v4\n  - name: Set up Quarto\n    uses: quarto-dev/quarto-actions/setup@v2\n\n  - name: Render the Quarto website\n    run: quarto render\n\n  - name: Deploy to GitHub Pages\n    uses: quarto-dev/quarto-actions/publish@v2\n    with:\n      target: gh-pages\n    env:\n      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+  }
+]
