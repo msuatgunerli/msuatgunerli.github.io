@@ -3,8 +3,8 @@ title: "2024-001: My First Post of 2024"
 description: "Brief description of your post"
 date: "2024-02-18"
 # date-modified: "2024-02-19"
-categories: [2024, default, news, testing]
-image: "../assets/001/img0.jpg"
+categories: [default, 2024, news, testing]
+image: "../assets/001/header.jpg"
 ---
 
 # My First Post of 2024

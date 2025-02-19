@@ -2,8 +2,8 @@
 title: "2025-002: My Second Post of 2025"
 description: "Brief description of your post"
 date: "2025-02-19"
-categories: [2025, default, news, analysis]
-image: "../assets/002/*.jpg"
+categories: [default, 2025, news, analysis]
+image: "../assets/002/header.jpg"
 ---
 
 # My Second Post of 2025

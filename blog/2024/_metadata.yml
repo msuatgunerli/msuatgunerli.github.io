@@ -4,7 +4,7 @@ lang: "en"
 number-sections: true
 author: "msuatgunerli"
 date: "2024-01-01"
-categories: [2024, default]
+categories: [default, 2024]
 toc: true
 toc-depth: 5
 code-copy: true
