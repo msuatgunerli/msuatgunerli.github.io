@@ -1,0 +1,94 @@
+## Create remote repo, clone it locally and
+
+git add .
+git commit -m "Initial Quarto website commit"
+git branch -M main
+git push -u origin main
+
+## Edit your _quarto.yml
+
+project:
+  type: website
+  output-dir: _site  # Ensure the output directory is set correctly
+
+execute:
+  freeze: auto
+
+## Create workflows folder and publish.yml
+
+mkdir -p .github/workflows
+touch .github/workflows/publish.yml
+
+name: Quarto Publish with Jupyter Execution
+
+on:
+  push:
+    branches: main  # Deploy when code is pushed
+  schedule:
+    - cron: "0 6 * * *"  # Runs daily at 6 AM UTC
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Required Packages
+        run: |
+          pip install --upgrade pip
+          pip install jupyter quarto
+          pip install -r requirements.txt  # Ensure this file lists dependencies
+
+      - name: Execute Jupyter Notebooks
+        run: |
+          jupyter nbconvert --execute --to notebook notebooks/win_probabilities.ipynb
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+## Add requirements.txt
+
+Create and fill in requirements.txt
+git add requirements.txt
+git commit -m "Add dependencies for Jupyter execution"
+git push origin main
+
+git add .github/workflows/publish.yml
+git commit -m "Update GitHub Actions to execute Jupyter notebooks"
+git push origin main
+
+## All future deployments
+
+Since we are using GitHub Actions to handle rendering and publishing:
+    quarto render --not needed
+    quarto publish gh-pages not needed
+
+git add .
+git commit -m "Updated content and notebooks"
+git push origin main
