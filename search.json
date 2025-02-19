@@ -7,6 +7,20 @@
     "text": "print(“Testing execution”)"
   },
   {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog Posts\n\n2025-001\n2025-002"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,10 +28,45 @@
     "text": "About this site"
   },
   {
+    "objectID": "photography/index.html",
+    "href": "photography/index.html",
+    "title": "Photography",
+    "section": "",
+    "text": "My Photos"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "msuatgunerli.github.io",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "blog/2025/posts/001.html",
+    "href": "blog/2025/posts/001.html",
+    "title": "My First Post of 2025",
+    "section": "",
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\nTest Image"
+  },
+  {
+    "objectID": "blog/2025/posts/001.html#introduction",
+    "href": "blog/2025/posts/001.html#introduction",
+    "title": "My First Post of 2025",
+    "section": "",
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…"
+  },
+  {
+    "objectID": "blog/2025/posts/001.html#main-content",
+    "href": "blog/2025/posts/001.html#main-content",
+    "title": "My First Post of 2025",
+    "section": "",
+    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\nTest Image"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "My Projects\nHere are my projects:"
   }
 ]
