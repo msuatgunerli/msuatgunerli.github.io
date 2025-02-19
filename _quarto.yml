@@ -11,12 +11,19 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about/index.qmd
+        text: About Me
+      - href: projects/index.qmd
+        text: Projects
+      - href: blog/index.qmd
+        text: Blog
+      - href: photography/index.qmd
+        text: Photography
 
 format:
   html:
     theme:
-      - cosmo
+      - litera
       - brand
     css: styles.css
     toc: true

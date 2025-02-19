@@ -1,0 +1,24 @@
+---
+title: "My First Post of 2025"
+description: "Brief description of your post"
+author: "msuatgunerli"
+date: "2025-02-18"
+categories: [news, analysis]
+image: "../assets/001/img0.jpg"
+---
+
+# My First Post of 2025
+
+## Introduction
+
+Welcome to my first post of 2025! In this article, we'll explore...
+
+## Main Content
+
+Here's where your main content goes. You can:
+
+- Use bullet points
+- Add code blocks
+- Include images
+
+![Test Image](../assets/001/img0.jpg)
