@@ -3,7 +3,7 @@ title: "2025-001: My First Post of 2025"
 description: "Brief description of your post"
 date: "2025-02-18"
 # date-modified: "2025-02-19"
-categories: [default, 2025, news, testing]
+categories: [_default, 2025, news, testing]
 image: "../assets/001/header.jpg"
 ---
 
