@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://msuatgunerli.github.io/test.html</loc>
-    <lastmod>2025-02-19T02:56:54.889Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/blog/index.html</loc>
-    <lastmod>2025-02-19T02:56:54.889Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/about.html</loc>
-    <lastmod>2025-02-19T02:56:54.886Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/index.html</loc>
-    <lastmod>2025-02-19T02:56:54.889Z</lastmod>
+    <lastmod>2025-02-19T03:36:03.348Z</lastmod>
   </url>
   <url>
     <loc>https://msuatgunerli.github.io/blog/2025/posts/001.html</loc>
-    <lastmod>2025-02-19T02:56:54.889Z</lastmod>
+    <lastmod>2025-02-19T03:36:03.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/index.html</loc>
+    <lastmod>2025-02-19T03:36:03.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/about.html</loc>
+    <lastmod>2025-02-19T03:36:03.345Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/blog/index.html</loc>
+    <lastmod>2025-02-19T03:36:03.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/blog/2025/posts/002.html</loc>
+    <lastmod>2025-02-19T03:36:03.348Z</lastmod>
   </url>
   <url>
     <loc>https://msuatgunerli.github.io/projects/index.html</loc>
-    <lastmod>2025-02-19T02:56:54.889Z</lastmod>
+    <lastmod>2025-02-19T03:36:03.348Z</lastmod>
   </url>
 </urlset>
