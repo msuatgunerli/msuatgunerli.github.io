@@ -40,13 +40,13 @@
 </section>
 
  ]]></description>
-  <category>2025</category>
   <category>default</category>
+  <category>2025</category>
   <category>news</category>
   <category>analysis</category>
   <guid>https://msuatgunerli.github.io/blog/2025/posts/002.html</guid>
   <pubDate>Wed, 19 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/002/*.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/002/header.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>2025-001: My First Post of 2025</title>
@@ -73,7 +73,12 @@
 </ul>
 <section id="test-toc-depth" class="level3" data-number="1.2.1">
 <h3 data-number="1.2.1" class="anchored" data-anchor-id="test-toc-depth"><span class="header-section-number">1.2.1</span> Test toc depth</h3>
-<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid" alt="Test Image 1"> <img src="https://msuatgunerli.github.io/blog/2025/assets/001/img1.jpg" class="img-fluid" alt="Test Image 2"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://msuatgunerli.github.io/blog/2025/assets/001/img0.jpg" class="img-fluid figure-img"></p>
+<figcaption>Test Image 1</figcaption>
+</figure>
+</div>
 
 
 </section>
@@ -81,13 +86,13 @@
 </section>
 
  ]]></description>
-  <category>2025</category>
   <category>default</category>
+  <category>2025</category>
   <category>news</category>
   <category>testing</category>
   <guid>https://msuatgunerli.github.io/blog/2025/posts/001.html</guid>
   <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/*.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://msuatgunerli.github.io/blog/2025/assets/001/header.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>2024-001: My First Post of 2024</title>
@@ -127,13 +132,13 @@
 </section>
 
  ]]></description>
-  <category>2024</category>
   <category>default</category>
+  <category>2024</category>
   <category>news</category>
   <category>testing</category>
   <guid>https://msuatgunerli.github.io/blog/2024/posts/001.html</guid>
   <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://msuatgunerli.github.io/blog/2024/assets/001/img0.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://msuatgunerli.github.io/blog/2024/assets/001/header.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
