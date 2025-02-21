@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  # render:
+  #   - photography/index.qmd
+  # resources:
+  #   - photography/js/
 
 execute:
   freeze: auto
@@ -28,3 +32,5 @@ format:
       - brand
     css: styles.css
     toc: true
+    # html-resources:
+    #   - photography/js/script.js

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://msuatgunerli.github.io/photography/index.html</loc>
+    <lastmod>2025-02-21T04:54:30.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/about.html</loc>
+    <lastmod>2025-02-21T02:53:51.114Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/blog/2024/posts/001.html</loc>
+    <lastmod>2025-02-19T07:03:53.731Z</lastmod>
+  </url>
+  <url>
     <loc>https://msuatgunerli.github.io/blog/2025/posts/001.html</loc>
     <lastmod>2025-02-19T07:03:20.323Z</lastmod>
   </url>
@@ -9,19 +21,11 @@
     <lastmod>2025-02-19T02:41:39.530Z</lastmod>
   </url>
   <url>
-    <loc>https://msuatgunerli.github.io/blog/index.html</loc>
-    <lastmod>2025-02-19T07:03:04.542Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/index.html</loc>
-    <lastmod>2025-02-19T01:58:41.600Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/blog/2024/posts/001.html</loc>
-    <lastmod>2025-02-19T07:03:53.731Z</lastmod>
-  </url>
-  <url>
     <loc>https://msuatgunerli.github.io/blog/2025/posts/002.html</loc>
     <lastmod>2025-02-19T07:03:16.977Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/blog/index.html</loc>
+    <lastmod>2025-02-19T07:03:04.542Z</lastmod>
   </url>
 </urlset>
