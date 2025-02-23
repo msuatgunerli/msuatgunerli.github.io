@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My Photography – msuatgunerli.github.io</title>
+<title>Photography Portfolio – msuatgunerli.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -107,11 +108,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../photography/index.html" aria-current="page"> 
+    <a class="nav-link" href="../photography/index.html"> 
 <span class="menu-text">Photography</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../photography_beta/index.html"> 
+    <a class="nav-link active" href="../photography_beta/index.html" aria-current="page"> 
 <span class="menu-text">Photography Beta</span></a>
   </li>  
 </ul>
@@ -122,23 +123,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Photography</h1>
+<h1 class="title">Photography Portfolio</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -150,55 +151,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-/* Add viewport meta tag in your Quarto document header */
-.iframe-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw; /* Use viewport width */
-  min-width: calc(100vw);
-  height: 100vh; /* Use viewport height */
-  min-height: calc(100vh);
-  /* max-width: 2160px; */
-  background-color: #f5f5f5;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.iframe-container:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.iframe-container iframe {
-  width: 100%;
-  min-width: calc(100vw);
-  height: 100%;
-  min-height: calc(100vh);
-  border: 0;
-  border-radius: 12px;
-  transform: scale(1.0); /* Hide edge scrollbars */
-}
-
-/* Safari-specific adjustments */
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .iframe-container {
-      width: 100vw;
-      height: 100vh;
-      border-radius: 0;
-    }
-    .iframe-container iframe {
-      transform: scale(1.00);
-    }
-  }
-}
-</style>
-<div class="iframe-container">
-<p><iframe src="https://www.pexels.com/@msuatgunerli" frameborder="0" allowfullscreen=""></iframe></p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<a href="landscape/" class="category-card">
+<h3 class="anchored">
+Landscape
+</h3>
+</a> <a href="street/" class="category-card">
+<h3 class="anchored">
+Street
+</h3>
+</a> <a href="people/" class="category-card">
+<h3 class="anchored">
+People
+</h3>
+</a> <a href="still/" class="category-card">
+<h3 class="anchored">
+Still
+</h3>
+</a> <a href="sport_and_wildlife/" class="category-card">
+<h3 class="anchored">
+Sport &amp; Wildlife
+</h3>
+</a><p><a href="sport_and_wildlife/" class="category-card"></a></p>
 </div>
 
 

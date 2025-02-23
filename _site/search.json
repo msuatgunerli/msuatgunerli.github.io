@@ -1,54 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "blog/2024/posts/001.html",
-    "href": "blog/2024/posts/001.html",
-    "title": "2024-001: My First Post of 2024",
-    "section": "",
-    "text": "Welcome to my first post of 2024! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image"
-  },
-  {
-    "objectID": "blog/2024/posts/001.html#introduction",
-    "href": "blog/2024/posts/001.html#introduction",
-    "title": "2024-001: My First Post of 2024",
-    "section": "",
-    "text": "Welcome to my first post of 2024! In this article, we’ll explore…"
-  },
-  {
-    "objectID": "blog/2024/posts/001.html#main-content",
-    "href": "blog/2024/posts/001.html#main-content",
-    "title": "2024-001: My First Post of 2024",
-    "section": "",
-    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image"
-  },
-  {
-    "objectID": "blog/2025/posts/001.html",
-    "href": "blog/2025/posts/001.html",
-    "title": "2025-001: My First Post of 2025",
-    "section": "",
-    "text": "Welcome to my first post of 2025! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image 1"
-  },
-  {
-    "objectID": "blog/2025/posts/001.html#introduction",
-    "href": "blog/2025/posts/001.html#introduction",
-    "title": "2025-001: My First Post of 2025",
-    "section": "",
-    "text": "Welcome to my first post of 2025! In this article, we’ll explore…"
-  },
-  {
-    "objectID": "blog/2025/posts/001.html#main-content",
-    "href": "blog/2025/posts/001.html#main-content",
-    "title": "2025-001: My First Post of 2025",
-    "section": "",
-    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image 1"
-  },
-  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
@@ -56,11 +7,11 @@
     "text": "My Projects\nHere are my projects:"
   },
   {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "msuatgunerli.github.io",
     "section": "",
-    "text": "About Me"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "blog/2025/posts/002.html",
@@ -84,10 +35,73 @@
     "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images"
   },
   {
+    "objectID": "blog/2024/posts/001.html",
+    "href": "blog/2024/posts/001.html",
+    "title": "2024-001: My First Post of 2024",
+    "section": "",
+    "text": "Welcome to my first post of 2024! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image"
+  },
+  {
+    "objectID": "blog/2024/posts/001.html#introduction",
+    "href": "blog/2024/posts/001.html#introduction",
+    "title": "2024-001: My First Post of 2024",
+    "section": "",
+    "text": "Welcome to my first post of 2024! In this article, we’ll explore…"
+  },
+  {
+    "objectID": "blog/2024/posts/001.html#main-content",
+    "href": "blog/2024/posts/001.html#main-content",
+    "title": "2024-001: My First Post of 2024",
+    "section": "",
+    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "blog/2025/posts/001.html",
+    "href": "blog/2025/posts/001.html",
+    "title": "2025-001: My First Post of 2025",
+    "section": "",
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…\n\n\n\nHere’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image 1"
+  },
+  {
+    "objectID": "blog/2025/posts/001.html#introduction",
+    "href": "blog/2025/posts/001.html#introduction",
+    "title": "2025-001: My First Post of 2025",
+    "section": "",
+    "text": "Welcome to my first post of 2025! In this article, we’ll explore…"
+  },
+  {
+    "objectID": "blog/2025/posts/001.html#main-content",
+    "href": "blog/2025/posts/001.html#main-content",
+    "title": "2025-001: My First Post of 2025",
+    "section": "",
+    "text": "Here’s where your main content goes. You can:\n\nUse bullet points\nAdd code blocks\nInclude images\n\n\n\n\n\n\nTest Image 1"
+  },
+  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
     "text": "Blog Posts\n\n\n2025\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n2025-002: My Second Post of 2025\n\n\n\n\n\n\n_default\n\n\n2025\n\n\nnews\n\n\nanalysis\n\n\n\nBrief description of your post\n\n\n\n\n\nFebruary 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n2025-001: My First Post of 2025\n\n\n\n\n\n\n_default\n\n\n2025\n\n\nnews\n\n\ntesting\n\n\n\nBrief description of your post\n\n\n\n\n\nFebruary 18, 2025\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n2024\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n2024-001: My First Post of 2024\n\n\n\n\n\n\n_default\n\n\n2024\n\n\nnews\n\n\ntesting\n\n\n\nBrief description of your post\n\n\n\n\n\nFebruary 18, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "photography_beta/index.html",
+    "href": "photography_beta/index.html",
+    "title": "Photography Portfolio",
+    "section": "",
+    "text": "Landscape\n\n \n\nStreet\n\n \n\nPeople\n\n \n\nStill\n\n \n\nSport & Wildlife"
   }
 ]

@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://msuatgunerli.github.io/photography/index.html</loc>
-    <lastmod>2025-02-21T05:18:26.927Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/about.html</loc>
-    <lastmod>2025-02-21T02:53:51.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/blog/2024/posts/001.html</loc>
-    <lastmod>2025-02-19T07:03:53.731Z</lastmod>
-  </url>
-  <url>
-    <loc>https://msuatgunerli.github.io/blog/2025/posts/001.html</loc>
-    <lastmod>2025-02-19T07:03:20.323Z</lastmod>
-  </url>
-  <url>
     <loc>https://msuatgunerli.github.io/projects/index.html</loc>
-    <lastmod>2025-02-19T02:41:39.530Z</lastmod>
+    <lastmod>2025-02-22T23:07:50.330Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/index.html</loc>
+    <lastmod>2025-02-22T23:07:50.329Z</lastmod>
   </url>
   <url>
     <loc>https://msuatgunerli.github.io/blog/2025/posts/002.html</loc>
-    <lastmod>2025-02-19T07:03:16.977Z</lastmod>
+    <lastmod>2025-02-22T23:07:50.328Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/blog/2024/posts/001.html</loc>
+    <lastmod>2025-02-22T23:07:50.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/about.html</loc>
+    <lastmod>2025-02-22T23:07:50.308Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/blog/2025/posts/001.html</loc>
+    <lastmod>2025-02-22T23:07:50.328Z</lastmod>
   </url>
   <url>
     <loc>https://msuatgunerli.github.io/blog/index.html</loc>
-    <lastmod>2025-02-19T07:03:04.542Z</lastmod>
+    <lastmod>2025-02-23T07:32:02.014Z</lastmod>
   </url>
   <url>
-    <loc>https://msuatgunerli.github.io/unused/index-wokring-2025-02-20-1156.html</loc>
-    <lastmod>2025-02-21T04:56:36.574Z</lastmod>
+    <loc>https://msuatgunerli.github.io/photography/index.html</loc>
+    <lastmod>2025-02-22T23:07:50.329Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/photography_beta/sport_and_wildlife/index.html</loc>
+    <lastmod>2025-02-23T07:52:51.465Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/photography_beta/index.html</loc>
+    <lastmod>2025-02-23T17:55:58.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/photography_beta/landscape/assets/index.html</loc>
+    <lastmod>2025-02-23T07:38:22.680Z</lastmod>
+  </url>
+  <url>
+    <loc>https://msuatgunerli.github.io/photography_beta/landscape/index.html</loc>
+    <lastmod>2025-02-23T07:54:50.986Z</lastmod>
   </url>
 </urlset>

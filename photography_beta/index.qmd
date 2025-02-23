@@ -1,0 +1,29 @@
+---
+title: "Photography Portfolio"
+format:
+  html:
+    page-layout: full
+    css: styles.css
+    include-in-header:
+      - text: |
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+  <a href="landscape/" class="category-card">
+    <h3>Landscape</h3>
+  </a>
+  <a href="street/" class="category-card">
+    <h3>Street</h3>
+  </a>
+  <a href="people/" class="category-card">
+    <h3>People</h3>
+  </a>
+  <a href="still/" class="category-card">
+    <h3>Still</h3>
+  </a>
+  <a href="sport_and_wildlife/" class="category-card">
+    <h3>Sport & Wildlife</h3>
+  </a>
+</div>

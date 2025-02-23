@@ -24,13 +24,17 @@ website:
         text: Blog
       - href: photography/index.qmd
         text: Photography
+      - href: photography_beta/index.qmd
+        text: Photography Beta
 
 format:
   html:
+    include-in-header:
+      - text: |
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
     theme:
       - litera
       - brand
     css: styles.css
     toc: true
-    # html-resources:
-    #   - photography/js/script.js
